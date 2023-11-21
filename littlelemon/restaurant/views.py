@@ -2,10 +2,10 @@ from django.shortcuts import render
 from rest_framework.generics import RetrieveUpdateDestroyAPIView, ListCreateAPIView
 from .models import Booking, Menu
 from .serializers import BookingSerializer, MenuSerializer
-from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import permission_classes, api_view
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.viewsets import ModelViewSet
-
+from django.http import HttpResponse
 
 
 
